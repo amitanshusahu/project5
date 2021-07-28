@@ -48,17 +48,18 @@ header {
   font-size: 10vw; 
   font-family: 'Zen Tokyo Zoo', cursive;
   color:black;
-  text-shadow:4px 4px 4px rgba(255, 253, 253, 0.856);
+  text-shadow:7px 7px 10px rgba(255, 253, 253, 0.856);
 }
 .container{
   max-width: 500px;
   margin: 40px auto 20px;
-
-
+  box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5); 
+  border-radius: 20px;
 }
 .contentcontainer{
   display: flex;
   align-items: center;
+  border-radius: 20px;
 
 }
 section{
@@ -70,12 +71,15 @@ section{
 }
 .section1{
   background: radial-gradient(circle at bottom, rgba(255, 255, 255, 0.26) , rgba(255, 255, 255, 0.5));
-
+  border-top-left-radius:  20px; 
+  border-bottom-left-radius:  20px; 
 }
 .section2{
   background: radial-gradient(circle at bottom, rgba(255, 255, 255, 0.226) , rgba(255, 255, 255, 0.445));
+  border-top-right-radius:  20px; 
+  border-bottom-right-radius:  20px; 
   border-right: 2px solid rgba(255, 255, 255, 0.575);
-  
+ 
 }
 .dropdown ul{
   list-style: none;
@@ -101,9 +105,9 @@ section{
 background: rgb(62, 236, 241);
 font-weight: 700;
 cursor: url(img/pointer.png), pointer;
+transform: translateY(5px);
 box-shadow:7px 7px 10px rgba(0, 0, 0, 0.5) ;
-transform: translateY(3px);
-transition: 0.2s;
+transition: 0.3s;
 }
 .dropdown ul li:hover > ul{
   display: block;
@@ -124,6 +128,8 @@ transition: 0.2s;
 footer{
   height: 20vh;
   text-align: center;
+  border-top-left-radius: 100px ;
+  background-color: rgba(40, 134, 141, 0.918);
 
 }
 footer div{
@@ -145,7 +151,7 @@ footer div{
     opacity: 0.7;
     font-size: 15px;
     transform: translateY(-5px);
-    box-shadow:7px 7px 10px rgba(0, 0, 0, 0.5) ;
+    box-shadow:7px 7px 10px rgba(0, 0, 0, 0.61) ;
     transition: 0.3s;
 
 }

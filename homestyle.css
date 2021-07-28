@@ -168,6 +168,8 @@ header {
 footer{
   height: 20vh;
   text-align: center;
+  border-top-left-radius: 100px ;
+  background-color: rgba(40, 134, 141, 0.918);
 
 }
 footer div{
@@ -186,7 +188,7 @@ footer div{
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.9;
     font-size: 15px;
     transform: translateY(-5px);
     box-shadow:7px 7px 10px rgba(0, 0, 0, 0.5) ;
