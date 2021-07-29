@@ -1,7 +1,6 @@
 *{
   margin: 0px;
   text-decoration: none;
-  font-family: 'Concert One', cursive;
   cursor: url(img/pointer.png), pointer;
 }
 body{
@@ -12,19 +11,22 @@ body{
   background-color: rgb(40, 134, 141);
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 98.5vw;
+  border-bottom-right-radius: 60px;
+  z-index: 1;
 }
   
 .navbar a {
   float: right;
   display: block;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   padding: 15px 18px;
   padding-right: 20px;
   font-size: 100%;
   font-weight: bolder;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 30px;
 }
 .logoholder{
   float:left;
@@ -41,23 +43,25 @@ body{
   background: radial-gradient(circle at center, rgba(94, 231, 255, 0.315) , rgba(255, 255, 255, 0));
 }
 header {
-  text-align:center;
-  padding-top: 20vh;
-  padding-bottom: 5vh;
-  height: 100%;
-  font-size: 10vw; 
-  font-family: 'Zen Tokyo Zoo', cursive;
-  color:black;
-  text-shadow:7px 7px 10px rgba(255, 253, 253, 0.856);
+  padding-top: 40px;
+  height: 130px;
+  font-size: 70px; 
+  color: rgb(0, 0, 0);
+  text-shadow:4px 4px 4px rgb(255, 255, 255);
+  text-align: center;
 }
 .container{
   max-width: 500px;
   margin: 40px auto 20px;
   box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5); 
   border-radius: 20px;
+  transform:translateY(-10px);
+  transition: 1s;
 }
+
 .contentcontainer{
   display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 20px;
 
@@ -67,6 +71,12 @@ section{
   width: 55%;
   text-align: right;
   border-top: 2px solid rgba(255, 255, 255, 0.575);
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: wrap;
 
 }
 .section1{
@@ -84,6 +94,8 @@ section{
 .dropdown ul{
   list-style: none;
   margin-top: 1%;
+  padding-left: 0px;
+  margin-left: 0px; ;
 }
 .dropdown ul li {
   background: rgb(255, 255, 255);
@@ -125,17 +137,21 @@ transition: 0.3s;
   position:relative;
 }
 
+.belowlistcontainer{
+  display: flex;
+  justify-content: center;
+}
+
 footer{
-  height: 20vh;
+  margin-top: 20px;
+  height: 50px;
   text-align: center;
   border-top-left-radius: 100px ;
   background-color: rgba(40, 134, 141, 0.918);
 
 }
 footer div{
-  padding-top: 10px;
-  margin-top: 40px;
-  
+  padding-top: 5px;
 }
 .fa {
   padding: 10px;
@@ -148,11 +164,9 @@ footer div{
 }
 
 .fa:hover {
-    opacity: 0.7;
-    font-size: 15px;
-    transform: translateY(-5px);
-    box-shadow:7px 7px 10px rgba(0, 0, 0, 0.61) ;
-    transition: 0.3s;
+  font-size: 15px;
+  transform: translateY(-5px);
+  box-shadow:7px 7px 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -198,5 +212,44 @@ background: linear-gradient(144deg, rgba(0,212,255,1) 0%, rgba(255,59,212,1) 50%
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.footercredits{
+  height: 20px;
+  font-size: 10px;
+  font-weight: 500;
+}
+@media all and (max-width: 700px) {
+  footer{
+    height: 60px;
+    
+  }
+  footer div{
+    margin: 5px;
+    padding: 10px;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 1px;
+    border-radius: 50%;
+  }
+  .navbar{
+    display: flex;
+    border-radius: 0px;
+    height: 40px; 
+    justify-content:center ;
+  }
+  .navbar a {
+    display: block;
+    color: #030303;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 30px;
+  }
+}
 
 
