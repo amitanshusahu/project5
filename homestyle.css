@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 body{
-  background:linear-gradient(rgb(207, 207, 207),#ffff) ;
+  background:linear-gradient(rgb(243, 243, 243),#ffff) ;
   cursor: url(img/pointer.png), pointer;
 }
 .navbar {
@@ -285,12 +285,11 @@ background: linear-gradient(144deg, rgba(0,212,255,1) 0%, rgba(255,59,212,1) 50%
     height: 180px;
     font-size: 50px;
     text-align: center;
+    clip-path: none;
   }
-  header div span{
-    color: rgb(3, 9, 43);
-    text-shadow: none;
-    font-weight: bold;
-  }
+ .myname{
+   font-size: 30px;
+ }
   .container{
     text-align: center;
   }
@@ -302,10 +301,9 @@ background: linear-gradient(144deg, rgba(0,212,255,1) 0%, rgba(255,59,212,1) 50%
     animation: golgol 1s linear infinite alternate;
   }
   p,.p1{
-    font-size: 20px;
+    font-size: 15px;
     text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px 0px 10px;
   }
   footer{
     height: 60px;
@@ -329,6 +327,7 @@ background: linear-gradient(144deg, rgba(0,212,255,1) 0%, rgba(255,59,212,1) 50%
     border-radius: 0px;
     height: 40px; 
     justify-content:center ;
+    width: 100%;
   }
   .navbar a {
     display: block;
