@@ -134,7 +134,6 @@ transition: 0.3s;
   display: block;
   margin: 0px;
   padding: 0px;
-  right: 30px;
   transition: 1s;
 }
 .dropdown ul ul{
